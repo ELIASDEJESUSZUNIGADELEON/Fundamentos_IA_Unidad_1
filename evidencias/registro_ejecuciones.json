@@ -48,8 +48,8 @@
     "id": "06-logica",
     "titulo": "Lógica proposicional e inferencia",
     "script": "06-logica-proposicional/logica.py",
-    "inicio": "2026-11-20T16:33:11.782037-06:00",
-    "segundos": 0.09401,
+    "inicio": "2026-11-20T17:14:49.323793-06:00",
+    "segundos": 0.123078,
     "codigo_salida": 0,
     "comando_legible": "python 06-logica-proposicional/logica.py",
     "comando_real": [

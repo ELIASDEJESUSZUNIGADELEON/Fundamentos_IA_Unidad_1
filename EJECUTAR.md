@@ -16,8 +16,8 @@ Las prácticas usan Python 3.14 en `.venv-u1/`. CrewAI usa Python 3.12 en `.venv
 # Abrir los cuadernos
 .\.venv-u1\Scripts\python.exe -m notebook .\Fundamentos_IA_Unidad_1
 
-# Actualizar las capturas después de ejecutar
-.\.venv-u1\Scripts\python.exe .\Fundamentos_IA_Unidad_1\herramientas\capturar_reportes.py
+# Mostrar la salida guardada de una actividad
+.\.venv-u1\Scripts\python.exe .\Fundamentos_IA_Unidad_1\herramientas\ver_salida.py --actividad 01-entorno
 ```
 
 Los dos scripts `.sh` necesitan Git Bash y GNU Awk 5.3 o posterior (`gawk --csv`), además de `sort`, `join` e `iconv`. Este equipo tiene GNU Awk 5.4.1.
@@ -48,7 +48,7 @@ py -3.12 -m venv .venv-crewai
 
 Los datos necesarios ya están incluidos en la unidad. Si se pierden, `herramientas/descargar_datos.py --vision` los descarga de sus fuentes. `herramientas/fuentes_datos.json` registra las URL y SHA-256 de los datos utilizados.
 
-Las versiones exactas de las bibliotecas usadas se guardan en `herramientas/requirements-ejecucion.txt` y `07-crewai/requirements-ejecucion.txt`. Las capturas requieren Chrome o Edge. No hacen falta TensorFlow, GPU, claves de API ni un servicio de búsqueda de pago.
+Las versiones exactas de las bibliotecas usadas se guardan en `herramientas/requirements-ejecucion.txt` y `07-crewai/requirements-ejecucion.txt`. Las imágenes muestran las salidas de consola guardadas y las gráficas generadas por las prácticas. ver_salida.py abre los TXT en una ventana sencilla para consultarlos y tomar una captura. No hacen falta TensorFlow, GPU, claves de API ni un servicio de búsqueda de pago.
 
 ## Validar la entrega
 

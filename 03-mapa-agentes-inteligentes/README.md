@@ -1,5 +1,7 @@
 # Mapa mental de agentes inteligentes
 
-Pendiente de agregar tu PDF en `documentos/mapa_agentes_inteligentes.pdf`.
+Mapa mental de agentes inteligentes en salud, logística y transporte. Incluye la problemática, el entorno, las entradas, las salidas y el tipo de agente de cada ejemplo.
 
-La carpeta de documentos está vacía para que pegues tu archivo.
+[Abrir imagen original](Mapa_Mental_2430085.jpg)
+
+![Mapa mental de agentes inteligentes en la industria](Mapa_Mental_2430085.jpg)

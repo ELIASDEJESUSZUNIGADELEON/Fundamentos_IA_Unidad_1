@@ -10,7 +10,7 @@ El orden sigue el desglose de ocho secciones de ZapataFrame y agrega visión por
 | Bloque | Referencia / datos usados | Adaptación |
 | --- | --- | --- |
 | Entorno | Los dos repositorios verifican Python y sus librerías | Verificación de seis librerías y una regresión mínima |
-| Historia y mapa | Secciones documentales en ambos repositorios | Se dejaron `documentos/` vacías para tus PDF |
+| Historia y mapa | Documentos e imagen proporcionados por Elias | Reporte PDF y LaTeX, evidencia del cuaderno y mapa mental |
 | Clientes | [CSV de ejemplo de ZapataFrame](https://github.com/ZapataFrame/FIA-Actividades-Unidad-1/blob/1f6c6eb29d80264aa76a3cbf5243927e860eb93b/04-bash-limpieza-clientes/clientes_sucio.csv) y reto de departamentos/ventas | Se reutilizó solo el pequeño dataset de entrada; script nuevo |
 | PIB y satisfacción | [Datos originales de Hands-On Machine Learning, Aurélien Géron](https://github.com/ageron/handson-ml/tree/master/datasets/lifesat), recopilados de OCDE y FMI | Descarga de los dos CSV originales, script Bash nuevo y unión verificada independientemente con Python |
 | Lógica | Operadores e interpretación de la política de acceso en la sección de ZapataFrame | Enumeración exhaustiva, equivalencia real y contraejemplos de inferencia |
@@ -28,4 +28,4 @@ El orden sigue el desglose de ocho secciones de ZapataFrame y agrega visión por
 - [Ollama: versión portátil oficial 0.40.16](https://github.com/ollama/ollama/releases/tag/v0.40.16).
 - [Modelo Qwen2.5 1.5B para Ollama](https://ollama.com/library/qwen2.5:1.5b).
 
-Los archivos de `resultados/` y `evidencias/` fueron generados en esta reconstrucción. Las capturas PNG corresponden a reportes HTML de ejecución, no a sesiones antiguas recuperadas del disco. Los datos de entrada conservan su procedencia; las fotos de los compañeros no se presentan como tomadas por Elias.
+Los archivos de resultados contienen las salidas de las prácticas. Las capturas de consola muestran sus registros TXT en una ventana de texto; las gráficas se guardan directamente desde cada programa. Las vistas previas de los documentos se renderizan desde los PDF proporcionados por Elias. Los datos de entrada conservan su procedencia.

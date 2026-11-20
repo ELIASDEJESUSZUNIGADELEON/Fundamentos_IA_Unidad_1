@@ -1,0 +1,259 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla,es-noquoting]{babel}
+\usepackage[margin=2.5cm, headheight=15pt]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{natbib}
+\usepackage{mathpazo}
+
+\graphicspath{{img/}}
+
+\definecolor{primary}{RGB}{0, 60, 113} 
+\definecolor{secondary}{RGB}{70, 70, 70} 
+
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{primary}}{\thesection}{1em}{}[{\color{primary}\titlerule[0.8pt]}]
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{secondary}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\color{secondary}}{\thesubsubsection}{1em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\color{secondary}\small Actividad 2}
+\fancyhead[R]{\color{secondary}\small Historia de la IA}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{primary}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{primary}\leaders\hrule height \footrulewidth\hfill}}
+
+\onehalfspacing
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{-1cm}
+    
+    \includegraphics[width=4.5cm]{logo.png}\\[1cm]
+    
+    {\scshape\huge Universidad Politécnica de Victoria \par}
+    \vspace{0.5cm}
+    
+    {\Large INGENIERÍA EN TECNOLOGÍAS DE LA INFORMACIÓN\\[0.1cm] E INNOVACIÓN DIGITAL}\\[1cm]
+    
+    {\LARGE \textbf{Fundamentos de Inteligencia Artificial} \par}
+    \vspace{0.7cm}
+    
+    \rule{\textwidth}{0.8pt}\\[0.5cm]
+    {\Huge \bfseries \color{primary} Historia de la IA}\\[0.3cm]
+    \rule{\textwidth}{0.8pt}\\[2.5cm]
+    
+    {\Large \textbf{Elaborado por:}}\\[0.5cm]
+    {\Large Elías de Jesús Zúñiga de León}\\[0.3cm]
+    {\large \textbf{Matrícula:} 2430085}\\[2cm]
+    
+    \vfill
+    
+    {\large \today\par}
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introducción}
+El desarrollo de la inteligencia artificial (IA) es uno de los logros más fascinantes de la historia de la informática. Lo que comenzó como una ambiciosa idea filosófica para replicar el pensamiento humano, se ha transformado tras décadas de investigación en una disciplina fundamental para la tecnología moderna. Este reporte presenta un recorrido analítico y cronológico sobre la evolución de la IA, apoyado en literatura técnica e investigación documental.
+
+El propósito central de este escrito va más allá de un recuento histórico; busca comprender a profundidad la naturaleza de las transiciones tecnológicas que marcaron época. Se explorará cómo las limitaciones del enfoque puramente simbólico (dominante en los primeros años) dieron paso a metodologías basadas en el análisis probabilístico de grandes volúmenes de datos, una transición íntimamente ligada al desarrollo del hardware computacional.
+
+Aunque arquitecturas algorítmicas actuales como las redes neuronales fueron propuestas teóricamente hace más de medio siglo, pasaron décadas relegadas por la falta de poder computacional. Fue la convergencia reciente de algoritmos eficientes y procesadores masivamente paralelos lo que dictó el vertiginoso ritmo de los avances actuales.
+
+Asimismo, se abordará el papel protagonista de los lenguajes de programación. Más que simples traductores de sintaxis, moldearon la forma de resolver problemas lógicos: desde paradigmas funcionales como LISP, pasando por la lógica declarativa de Prolog, hasta llegar a la actual hegemonía del ecosistema Python. El software ha evolucionado simbióticamente a la par de la teoría.
+
+Finalmente, el documento dedicará un espacio a la democratización de la IA mediante el concepto de TinyML, así como una reflexión sobre el panorama futuro, sus implicaciones éticas y su impacto en el mercado laboral. La inteligencia artificial generativa actual abre interrogantes inéditos sobre nuestra relación con la tecnología y la economía del conocimiento.
+\newpage
+\section{Desarrollo Cronológico de la IA}
+
+\subsection{Fundamentos y Precursores Filosóficos}
+Para rastrear los orígenes auténticos de la inteligencia artificial, es necesario remontarse mucho más atrás de la invención de la computadora digital, adentrándonos en el terreno de la filosofía clásica y la lógica matemática. Durante el siglo XVII, filósofos como René Descartes debatieron extensamente sobre la naturaleza de la mente y su separación del cuerpo (dualismo cartesiano), introduciendo tempranamente el concepto de usar el lenguaje como la prueba ineludible del pensamiento racional, algo que inspiraría posteriormente a teóricos informáticos \citep{abramson2011descartes}.
+
+A finales del siglo XIX y principios del XX, matemáticos como George Boole, con su álgebra booleana, y Gottlob Frege, con el desarrollo de la lógica de primer orden, proporcionaron los cimientos formales para manipular afirmaciones verdaderas o falsas mediante símbolos abstractos. Estas herramientas lógicas serían el sustrato sobre el cual se construiría la primera arquitectura de computación teórica.
+
+\subsection{El Test de Turing y la Mecanización del Pensamiento}
+La formalización teórica más importante y directa de la inteligencia artificial moderna llegó de la mano del brillante matemático británico Alan Turing. Turing no solo había conceptualizado la máquina universal (precursora de la computadora moderna) en 1936, sino que en 1950 publicó el que es, probablemente, el artículo fundacional más citado en la historia de la disciplina: \textit{Computing Machinery and Intelligence} \citep{turing1950computing}. 
+
+En este texto, Turing propuso esquivar la ambigua y filosóficamente empantanada pregunta de si ``las máquinas pueden pensar''. En su lugar, sugirió un experimento práctico, operacional y medible conocido hoy como el Test de Turing (o el Juego de la Imitación). La premisa era elegante en su formulación pero profunda en sus implicaciones: si un evaluador humano, comunicándose exclusivamente mediante una interfaz de texto aislada, es incapaz de distinguir si su interlocutor es una persona real o una máquina, se podría considerar, a efectos prácticos, que la máquina exhibe inteligencia. 
+
+Esta perspectiva pragmática sentó las bases para el estudio empírico de las capacidades cognitivas artificiales, enfocándose en el comportamiento externo (los resultados) en lugar de intentar decodificar los procesos internos de la supuesta consciencia algorítmica.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.55\textwidth]{Turing_test_diagram.png}
+    \caption{Diagrama conceptual del famoso Test de Turing.}
+    \label{fig:turing}
+\end{figure}
+
+\subsection{El Amanecer: La IA Simbólica y la Conferencia de Dartmouth (1956)}
+El término ``Inteligencia Artificial'' (Artificial Intelligence) fue acuñado formalmente y con un propósito unificador en el verano de 1956, durante un seminario en el Dartmouth College. El evento fue organizado por cuatro figuras que se convertirían en los pilares del campo: John McCarthy, Marvin Minsky, Nathaniel Rochester y Claude Shannon \citep{mccarthy1956proposal}. 
+
+El consenso en ese histórico momento estaba guiado por un optimismo desbordante y, visto en retrospectiva, sumamente ingenuo. Los investigadores creían genuinamente que, trabajando arduamente durante un par de meses de verano, un grupo selecto de científicos podría lograr avances definitivos en la resolución de problemas extremadamente complejos como la traducción automática del lenguaje, la visión artificial y la simulación del intelecto general.
+
+La metodología que predominó indiscutiblemente durante estas primeras décadas fue la Inteligencia Artificial Simbólica, a menudo denominada GOFAI (\textit{Good Old-Fashioned Artificial Intelligence}). Este paradigma se basaba en una premisa fundamental: la inteligencia, humana o artificial, podía ser reproducida mediante la manipulación formal de símbolos a través de reglas lógicas de alto nivel. Bajo este enfoque, si se lograba codificar todo el conocimiento del mundo en reglas lógicas, la máquina podría razonar y deducir respuestas.
+
+Los Sistemas Expertos fueron el mayor logro comercial e investigativo de esta etapa simbólica. Eran programas diseñados para emular la capacidad de toma de decisiones de un experto humano en un campo altamente específico y delimitado. Funcionaban bajo estructuras condicionales de tipo ``si-entonces'' (\textit{if-then}). Ejemplos notables incluyen programas como MYCIN, capaz de diagnosticar enfermedades infecciosas de la sangre con una precisión que rivalizaba con la de médicos jóvenes, o DENDRAL, utilizado para analizar la estructura química de compuestos moleculares.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Conferencia_Dartmouth.jpg}
+    \caption{La Conferencia de Dartmouth (1956), donde nace oficialmente el término IA.}
+    \label{fig:dartmouth}
+\end{figure}
+
+\subsection{Los Inviernos de la IA: Frustración y Falta de Financiamiento}
+El excesivo optimismo de las décadas de 1950 y 1960 eventualmente colapsó bajo el enorme peso de promesas gubernamentales e industriales incumplidas. A pesar de éxitos aislados en entornos sumamente controlados, los sistemas puramente simbólicos demostraron ser excepcionalmente frágiles. Funcionaban a la perfección en ``micromundos'' simulados y matemáticos, pero fallaban estrepitosamente al enfrentarse al ruido, la ambigüedad, las excepciones y la inmensidad impredecible del mundo real \citep{haenlein2019brief}. 
+
+El problema radicaba en la explosión combinatoria: el mundo real tiene demasiadas variables para ser codificadas a mano mediante reglas lógicas. Además, surgió la objeción filosófica planteada por John Searle con su famoso experimento mental de la ``Habitación China'' \citep{searle1980minds}, argumentando que la pura manipulación sintáctica de símbolos, por más rápida que fuera, nunca equivaldría a una verdadera comprensión semántica.
+
+El primer ``Invierno de la IA'' se desencadenó a mediados de la década de 1970. En el Reino Unido, el famoso Informe Lighthill (1973) criticó de manera devastadora la viabilidad y el progreso del campo, argumentando categóricamente que las técnicas de la época eran insuficientes para escalar y resolver problemas de impacto real económico o social. Como consecuencia directa e inmediata, los gobiernos europeos y agencias militares clave como DARPA en Estados Unidos recortaron drásticamente y sin piedad la financiación para la investigación teórica en IA. 
+
+Un segundo invierno, aún más duro para la industria corporativa, azotó el campo a finales de los años 80 tras el colapso comercial de las empresas dedicadas al desarrollo de hardware especializado (como las célebres Máquinas Lisp), evidenciando que el costoso enfoque de reglas explícitas estaba perdiendo por completo su viabilidad económica y técnica frente a las computadoras personales de propósito general de IBM y Apple.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Invierno_ia_1970.jpg}
+    \caption{Representación ilustrativa del estancamiento y la falta de financiamiento durante el Invierno de la IA.}
+    \label{fig:invierno}
+\end{figure}
+
+\newpage
+\section{Machine Learning y la Era del Big Data}
+
+\subsection{La transición de los Sistemas Expertos a la Probabilidad}
+Ante el absoluto estancamiento metodológico de la IA simbólica, el enfoque probabilístico y estadístico comenzó a ganar tracción lenta pero segura durante los años 90. En lugar de codificar reglas de manera manual a través de exhaustivas entrevistas con expertos humanos, el \textit{Machine Learning} (Aprendizaje Automático) proponía un paradigma inverso: crear algoritmos matemáticos capaces de extraer patrones y reglas directamente a partir de la observación de datos. 
+
+Un hito mediático que marcó este punto de inflexión en la percepción pública fue la épica victoria del sistema Deep Blue de IBM sobre el campeón mundial de ajedrez indiscutible, Garry Kasparov, en 1997. Aunque Deep Blue aún dependía en gran medida de heurísticas de fuerza bruta y hardware masivamente especializado, su triunfo demostró que las máquinas podían superar la cognición humana en dominios cerrados extremadamente complejos \citep{russell2016artificial}.
+
+Sin embargo, el verdadero salto cualitativo hacia la IA que conocemos hoy ocurrió entrado el siglo XXI, gracias a la confluencia histórica de dos elementos tecnológicos críticos: la explosión masiva de datos estructurados y no estructurados (Big Data) facilitada por la democratización de Internet y los teléfonos inteligentes, y la drástica e impensable mejora en el rendimiento del hardware de procesamiento paralelo. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Deepblue_vs_Kasparov.jpeg}
+    \caption{El hito histórico: Kasparov frente a la supercomputadora Deep Blue.}
+    \label{fig:kasparov}
+\end{figure}
+
+\subsection{El papel del Hardware: GPUs y el fin del letargo conexionista}
+Los algoritmos de Redes Neuronales Artificiales habían sido ideados décadas atrás basándose vagamente en la comprensión matemática de las conexiones sinápticas del cerebro humano. Sin embargo, estas redes habían sufrido el desdén académico. En 1969, Minsky y Papert publicaron un libro demostrando que el ``perceptrón simple'' (la red neuronal básica de una capa) era incapaz de resolver funciones matemáticas no lineales elementales como el operador lógico XOR. Aunque el problema se resolvía teóricamente añadiendo múltiples ``capas ocultas'' de neuronas, el costo matemático de entrenar dichas redes mediante el cálculo de derivadas era imposible de manejar para las computadoras de los años 70 y 80.
+
+Incluso cuando investigadores como Geoffrey Hinton revivieron el campo en 1986 demostrando la eficacia del algoritmo de propagación hacia atrás (\textit{backpropagation}) para entrenar redes multicapa \citep{rumelhart1986learning}, el letargo continuó por falta de potencia bruta. Las CPU (Unidades Centrales de Procesamiento) tradicionales, diseñadas para ejecutar instrucciones complejas de manera secuencial, eran demasiado lentas para realizar los millones de multiplicaciones de matrices que requiere una red neuronal.
+
+La revolución salvadora no provino de la matemática teórica, sino de la industria de los videojuegos. Las unidades de procesamiento gráfico (GPU) poseen miles de núcleos pequeños optimizados específicamente para realizar cálculos aritméticos simultáneos en paralelo (esenciales para renderizar píxeles en modelos 3D). Investigadores pioneros descubrieron que el entrenamiento de una red neuronal encajaba con precisión microscópica en la arquitectura masivamente paralela de las GPUs de empresas como NVIDIA. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{GPUS.jpeg}
+    \caption{El poder paralelo de las Tarjetas Gráficas (GPUs) impulsando la IA.}
+    \label{fig:gpus}
+\end{figure}
+
+\subsection{El dominio del Deep Learning y la IA Generativa}
+Impulsadas por la Ley de Moore y el hardware de NVIDIA, en 2012 ocurrió el evento que partió la historia de la IA en dos: el concurso ImageNet. La red neuronal profunda ``AlexNet'' pulverizó a todos los algoritmos clásicos de visión artificial, reduciendo la tasa de error por un margen sin precedentes \citep{lecun2015deep}. Este evento inauguró la era dorada del \textit{Deep Learning} (Aprendizaje Profundo). A diferencia del Machine Learning clásico, que requiere que los ingenieros (humanos) extraigan y seleccionen manualmente las características clave de los datos (\textit{feature engineering}), las redes neuronales profundas aprenden representaciones jerárquicas abstractas de forma totalmente autónoma.
+
+Actualmente, el panorama tecnológico global se ha transformado nuevamente, a una velocidad vertiginosa, con el auge de la inteligencia artificial generativa, impulsada primordialmente por la arquitectura \textit{Transformer}, introducida por investigadores de Google en 2017 bajo el artículo ``Attention is all you need'' \citep{vaswani2017attention}, y por las Redes Generativas Antagónicas (GANs) \citep{goodfellow2014generative}. 
+
+Estos gigantescos Modelos Fundacionales (Foundation Models), como la familia GPT (Generative Pre-trained Transformer), entrenados con parámetros que rozan los billones y absorbiendo una gran porción del texto disponible públicamente en Internet, han superado las barreras de la mera percepción y clasificación. Han cruzado el umbral hacia la fluidez del lenguaje natural complejo, la redacción de código de programación funcional, y la creación de arte visual, cerrando de forma asombrosa el bucle filosófico iniciado por el Test de Turing más de setenta años atrás.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Red_neuronal.png}
+    \caption{Arquitectura abstracta de una Red Neuronal Profunda (Deep Learning).}
+    \label{fig:deeplearning}
+\end{figure}
+
+\newpage
+\section{Línea de Tiempo y Evolución de los Lenguajes de Programación}
+
+El fenomenal desarrollo teórico de la inteligencia artificial ha estado íntimamente ligado a las herramientas de software disponibles para su implementación técnica. A continuación, se presenta una cronología detallada que relaciona los hitos y paradigmas teóricos con sus respectivos lenguajes de programación predominantes:
+
+\begin{itemize}
+    \item \textbf{1943 - 1950: La Fundación Matemática Teórica.} Warren McCulloch y Walter Pitts proponen el primer modelo matemático de una neurona. Alan Turing publica su artículo sobre maquinaria computacional e inteligencia, instaurando el famoso Test de Turing. En esta era temprana, los programas se escribían literalmente conectando cables o utilizando ensamblador y código máquina.
+    
+    \item \textbf{1956 - 1960: El Nacimiento Oficial y LISP.} Se celebra la Conferencia de Dartmouth (1956). Mientras Turing y Shannon establecían bases teóricas, John McCarthy desarrolló el lenguaje LISP en 1958. LISP (\textit{LISt Processing}) se erigió como el lenguaje fundacional indiscutible de la IA en Estados Unidos y gran parte del mundo occidental debido a su extraordinaria flexibilidad para la manipulación simbólica y su naturaleza fundamentada en el cálculo lambda. Permitía, de manera revolucionaria, que el código mismo fuera tratado y modificado como si fuera una estructura de datos convencional, un concepto adelantado a su tiempo que permitió los primeros simuladores de teoremas lógicos.
+    
+    \item \textbf{1966: El primer Chatbot.} Joseph Weizenbaum en el MIT desarrolla ELIZA, un programa de procesamiento de lenguaje natural que simulaba a un psicoterapeuta Rogeriano, logrando engañar a muchos usuarios humanos a pesar de su simplicidad estructural basada en coincidencias de patrones.
+    
+    \item \textbf{1970 - 1980: El Auge de Sistemas Expertos y Prolog.} En Europa, Alain Colmerauer y Philippe Roussel concibieron Prolog (\textit{Programming in Logic}) en 1972. A diferencia de lenguajes imperativos procedimentales (como C o Java), Prolog es puramente declarativo. El programador se limita a definir axiomas y reglas lógicas que rigen el mundo, y el ``motor de inferencia'' interno del lenguaje se encarga de deducir automáticamente la respuesta a una consulta. Fue la piedra angular de la investigación en IA simbólica europea y el pilar del ambicioso pero fallido proyecto masivo de la ``Quinta Generación de Computadoras'' impulsado por el gobierno de Japón en los años ochenta.
+    
+    \item \textbf{1986 - 1990: El Resurgimiento Conexionista y el uso de C/C++.} A medida que la IA comenzó a requerir mayor eficiencia computacional bruta, especialmente durante el renacimiento de las arquitecturas conexionistas y el renacer del algoritmo de \textit{backpropagation}, lenguajes como C y C++ cobraron un protagonismo vital. Ofrecían un control de muy bajo nivel sobre la gestión y reserva de la memoria RAM y otorgaban la velocidad de ejecución estrictamente necesaria para iterar sobre grandes matrices matemáticas, superando drásticamente el lento rendimiento en tiempo real de las máquinas dedicadas Lisp.
+    
+    \item \textbf{1995 - 2005: El dominio del Análisis de Datos Estadístico.} Con la transición masiva hacia el Machine Learning estadístico y probabilístico (como las Máquinas de Vectores de Soporte o SVMs, y los Bosques Aleatorios), la necesidad imperiosa de escribir código rápido para prototipado matemático y experimentación gráfica dio paso al uso extendido de MATLAB, un lenguaje propietario que facilitó enormemente la investigación académica en campos de álgebra lineal, procesamiento de señales y estadística de alto nivel.
+    
+    \item \textbf{2012 - Presente: La Era del Deep Learning y la Hegemonía Absoluta de Python.} El ecosistema Python, ideado originalmente a principios de los noventa por Guido van Rossum, conquistó por completo el monopolio de la IA contemporánea debido a su sintaxis extremadamente clara, fácil curva de aprendizaje y su vasta, activa e imparable comunidad de código abierto. Aunque por sí mismo Python es un lenguaje interpretado y no es el lenguaje más rápido en ejecución, actúa como el puente ideal (un lenguaje ``pegamento'' o \textit{glue language}). Python conecta amigablemente al usuario con bibliotecas subyacentes altamente optimizadas que están escritas puramente en C++ y CUDA (lenguaje de NVIDIA para paralelismo de GPUs). Ejemplos monumentales de esto son frameworks como TensorFlow (creado por Google) y PyTorch (creado por Meta/Facebook). Esta potente dualidad de facilidad de uso más rendimiento brutal democratizó el acceso global a técnicas avanzadas de Deep Learning, permitiendo que desde gigantes tecnológicos hasta investigadores independientes y estudiantes universitarios desarrollen soluciones de IA vanguardistas.
+\end{itemize}
+
+\newpage
+\section{Análisis Crítico: La Transición hacia el Machine Learning y TinyML}
+
+\subsection{El rol crítico de la capacidad de cómputo en la viabilidad algorítmica}
+Al observar con lente crítica el devenir histórico, resulta profundamente fascinante detenerse a analizar cómo el progreso del pensamiento científico y de la abstracción matemática superó, en muchas ocasiones y con creces, a las posibilidades de la ingeniería electrónica y los materiales de mediados y finales del siglo XX. Conceptos matemáticos que hoy forman el núcleo absoluto del aprendizaje profundo, existían detallados y publicados sobre el papel académico mucho antes de que pudieran demostrar su verdadera y asombrosa valía empírica en aplicaciones industriales. 
+
+Esta desconexión temporal entre la formulación teórica y la viabilidad práctica generó escepticismo e incluso parálisis investigativa. Tal como se abordó brevemente en apartados anteriores, la revolución del \textit{Deep Learning} no ocurrió de la noche a la mañana gracias al descubrimiento repentino de un nuevo e infalible teorema mágico en algún pizarrón universitario. Ocurrió primordialmente gracias a una adopción de herramientas tecnológicas colaterales (como el hardware de videojuegos y diseño gráfico 3D). La gigantesca capacidad de cómputo creció a un ritmo exponencial, fielmente impulsada por la Ley de Moore. Lo que en el año 1985 tomaba semanas enteras de procesamiento en los mainframes universitarios más potentes de la época, en 2015 requería apenas un par de días, y en la actualidad requiere solo minutos. Esta reducción drástica del tiempo de cálculo destrabó los ciclos de experimentación rápida, permitiendo iterar y corregir errores a una velocidad que hizo posible la era dorada de las inteligencias artificiales modernas. La lección crítica aquí es que la inteligencia algorítmica está ineludiblemente condicionada por el límite físico de los transistores que la sustentan.
+
+\subsection{De la Nube al Extremo: La filosofía y aplicabilidad del TinyML}
+El rotundo impacto comercial y científico del aprendizaje profundo masivo provocó una centralización oligopólica de los recursos tecnológicos. Entrenar y desplegar modelos de lenguaje como GPT-4 o generadores de imágenes como Midjourney requiere acceder a gigantescos e hiperrefrigerados centros de datos corporativos (Cloud Computing) controlados por un puñado de firmas billonarias. Sin embargo, este paradigma hipercentralizado presenta enormes desafíos estructurales respecto a la latencia de respuesta, el astronómico consumo de ancho de banda, la dependencia crítica y perenne de una conexión a internet estable y, por encima de todo, el manejo, protección y privacidad de los datos sensibles y privados del usuario final.
+
+Como una necesaria e ingeniosa respuesta evolutiva a esta hiperdependencia de la nube, surge con enorme fuerza el campo de investigación conocido como Tiny Machine Learning, o simplemente TinyML. TinyML representa, en esencia, la convergencia multidisciplinaria del aprendizaje automático altamente optimizado y comprimido con los microcontroladores de consumo energético ultrabajo \citep{warden2019tinyml}. Permite, por primera vez en la historia, que algoritmos complejos de inferencia neuronal se ejecuten localmente, directamente en minúsculos dispositivos de borde (\textit{edge computing}) conectados al entorno físico, consumiendo apenas una fracción de milivatio de potencia energética e ignorando por completo la conexión a servidores externos remotos.
+
+Las implicaciones prácticas de esta subdisciplina son revolucionarias para la ingeniería biomédica, la agricultura de precisión y la robótica industrial. Habilita, por ejemplo, que un marcapasos cardíaco implantado en el pecho de un paciente reconozca anomalías rítmicas sutiles mediante aprendizaje automático y emita un impulso correctivo sin necesidad de transmitir el electrocardiograma a la nube; o que sensores ambientales desplegados en cultivos agrícolas monitoreen la humedad y salud de la flora mediante visión por computadora básica, funcionando con baterías de botón de impacto ínfimo durante meses o años ininterrumpidos. 
+
+La decidida transición técnica hacia el TinyML subraya una maduración filosófica del campo de la IA. Ya no se busca únicamente la fuerza bruta y ciega para construir el modelo más masivo, abstracto y omnisciente en un opulento centro de investigación cerrado. La frontera de la innovación también pasa por empaquetar, comprimir y optimizar esa ``inteligencia'' en estructuras físicas diminutas, eficientes y seguras, de manera que puedan integrarse orgánicamente, silenciosamente y en tiempo real dentro del ecosistema físico y cotidiano de la humanidad, acercando verdaderamente la promesa tecnológica al mundo táctil de las personas.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.42\textwidth]{TinyML_microcontroller.png}
+    \caption{Hardware de bajo consumo ejecutando modelos de Machine Learning (TinyML).}
+    \label{fig:tinyml}
+\end{figure}
+
+\newpage
+\section{Implicaciones Éticas y Económicas en la Sociedad Moderna}
+
+El despliegue generalizado de la inteligencia artificial moderna no solo ha superado hitos técnicos, sino que ha desencadenado profundos e inevitables dilemas económicos, éticos y legales que reclaman atención urgente por parte de legisladores, sociólogos y la ciudadanía en general. El desarrollo algorítmico ya no puede analizarse puramente como un logro de la ingeniería informática desconectado de su impacto social inmediato.
+
+\subsection{Impacto en el mercado laboral y la Economía de los Sentimientos}
+La historia del avance tecnológico muestra que la automatización ha tendido a reemplazar primordialmente el trabajo manual, físico y repetitivo (las llamadas ``tareas mecánicas''). Sin embargo, la revolución de la Inteligencia Artificial Generativa y el Aprendizaje Profundo amenaza con irrumpir masivamente en la automatización de tareas cognitivas, lógicas, analíticas e incluso creativas que históricamente eran consideradas como el refugio inexpugnable del trabajo profesional humano \citep{cappelli2019artificial}. Tareas complejas como la redacción de informes financieros detallados, el análisis preliminar de jurisprudencia legal, la redacción de código de programación comercial, y la creación rápida de material de diseño gráfico publicitario están siendo progresivamente delegadas a modelos de lenguaje y sistemas de difusión.
+
+Algunos académicos de las escuelas de negocios y economía teorizan que nos dirigimos ineludiblemente hacia lo que denominan una ``Economía de los Sentimientos'' o \textit{Feeling Economy} \citep{haenlein2019brief}. A medida que el análisis abstracto de datos y las tareas lógicas ``pensantes'' sean acaparadas abrumadoramente por las máquinas inteligentes (debido a su extrema rapidez y bajo costo operativo continuo), el trabajo asalariado y el valor laboral de los seres humanos dependerán y girarán cada vez más en torno a la empatía, el liderazgo interpersonal, la persuasión comercial, la enfermería, la psicología, la enseñanza y el cuidado personal; es decir, aquellas tareas interpersonales e inherentemente emocionales (\textit{feeling tasks}) que dependen directamente de la experiencia viva y conectiva del ser humano y que resultan infinitamente más difíciles de programar, parametrizar, emular y sustituir por una red neuronal por más profunda que sea.
+
+\subsection{Sesgos algorítmicos, privacidad y necesidad de regulación}
+Otro frente crítico e inminente en la era del Big Data radica en la objetividad ficticia de las máquinas. Existe una falsa y peligrosa percepción popular de que, debido a que los algoritmos de IA son entidades matemáticas escritas en código, están inherentemente exentos y purificados de los prejuicios humanos. La literatura académica en ética tecnológica ha demostrado repetidamente que esto es una falacia. Un sistema de aprendizaje automático masivo basa su criterio y sus respuestas íntegramente en los datos históricos con los que fue alimentado durante semanas en un servidor. Si los datos crudos de entrenamiento recogen, directa o indirectamente, los sesgos cognitivos, raciales, económicos o de género profundamente incrustados en las sociedades humanas del pasado, el modelo final no solo adoptará, reproducirá y automatizará dichos sesgos de manera ciega, sino que corre el riesgo de amplificarlos y darles un barniz injustificado de objetividad científica e irrefutabilidad tecnológica \citep{floridi2018ai}. Ejemplos alarmantes incluyen algoritmos corporativos de reclutamiento de personal que descartan injustamente currículums por razones demográficas, sistemas judiciales automatizados de evaluación de reincidencia que asignan puntajes de peligrosidad más altos a grupos minoritarios, o sistemas de reconocimiento facial entrenados predominantemente con fotografías de individuos caucásicos, los cuales fallan gravemente al tratar de identificar con precisión a personas de piel oscura, resultando en consecuencias drásticas en entornos de seguridad policial y fronteriza.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.65\textwidth]{AI_human_interaction.jpg}
+    \caption{La sinergia entre humanos y máquinas: hacia una economía del sentimiento.}
+    \label{fig:etica}
+\end{figure}
+
+\newpage
+\section{Conclusiones Personales}
+
+El recorrido de la inteligencia artificial a lo largo de los años nos demuestra que el avance tecnológico rara vez es en línea recta. Pasamos de creer que la inteligencia se podía programar usando reglas estrictas, a darnos cuenta de que, en realidad, el aprendizaje necesita estar expuesto a muchos datos para ir encontrando patrones, casi de la misma forma en que lo hacemos las personas.
+
+Todo este cambio nos deja una lección clave: el software y el hardware siempre tienen que ir de la mano. Hubo conceptos matemáticos increíbles que se quedaron guardados por años simplemente porque no existían computadoras lo suficientemente potentes para correrlos. Hoy, gracias a los procesadores gráficos y a tecnologías más prácticas como TinyML, vemos cómo la IA está saliendo de los grandes servidores para meterse de lleno en nuestra vida diaria.
+
+Al final de cuentas, me parece fundamental entender que la inteligencia artificial es, ante todo, una herramienta. Es un recurso increíble que debemos saber aprovechar al máximo para agilizar nuestro trabajo, pero en el que tampoco debemos confiar ciegamente ni al 100\%. Como futuros ingenieros, hay que tener bien claro que las máquinas aprenden de lo que nosotros les enseñamos; si les damos datos con errores o prejuicios, sus resultados van a arrastrar esos mismos problemas. El verdadero reto hoy no es solo crear programas más listos, sino aprender a usarlos con criterio, de forma ética y sin perder el sentido común.
+
+Finalmente, es común escuchar el temor de que la inteligencia artificial terminará reemplazando a los ingenieros o programadores, pero la realidad apunta hacia un camino muy distinto. En lugar de robarnos el empleo, esta tecnología está abriendo un panorama completamente nuevo de oportunidades laborales para quienes sepan trabajar junto a ella. Cada vez será más necesario contar con profesionales que no solo escriban código, sino que sepan supervisar el funcionamiento de estos modelos, auditar sus resultados para evitar errores graves, y estructurar correctamente las peticiones o parámetros (lo que hoy conocemos como ingeniería de prompts) para sacarles el mayor provecho. En resumen, el ingeniero del futuro no será aquel que intente competir contra la IA, sino el que sepa dirigirla inteligentemente.
+\newpage
+\bibliographystyle{apalike}
+\bibliography{referencias}
+
+\end{document}

@@ -47,8 +47,9 @@ def main():
     for r in registros:
         assert r["codigo_salida"]==0,r["id"]
         assert hashlib.sha256((ROOT/r["script"]).read_bytes()).hexdigest()==r["sha256_codigo"],r["id"]
-        for extension in ["html","txt","png"]: assert (ROOT/"evidencias"/f"{r['id']}.{extension}").is_file()
-    ok("Diez prácticas con salida 0, huellas del código vigentes y evidencia HTML/TXT/PNG.")
+        for extension in ["txt","png"]: assert (ROOT/"evidencias"/f"{r['id']}.{extension}").is_file()
+    assert not list((ROOT/"evidencias").glob("*.html"))
+    ok("Diez prácticas con salida 0, código vigente y salidas TXT/PNG sin reportes HTML.")
     cuadernos=list(ROOT.rglob("actividad.ipynb")); assert len(cuadernos)==7
     for archivo in cuadernos:
         nb=nbformat.read(archivo,as_version=4); nbformat.validate(nb)
@@ -60,11 +61,11 @@ def main():
                 assert celda.execution_count is not None,archivo
                 assert all(o.output_type!="error" for o in celda.outputs),archivo
     ok("Siete cuadernos válidos, ejecutados sin errores, con código completo sincronizado con sus scripts.")
-    rutas_png=list((ROOT/"evidencias").glob("*.png")); assert len(rutas_png)==11
+    rutas_png=list((ROOT/"evidencias").glob("*.png")); assert len(rutas_png)==13
     for ruta in rutas_png:
         with Image.open(ruta) as imagen:
             imagen.verify()
-    ok("Once capturas PNG válidas, incluido el índice.")
+    ok("Trece imágenes PNG válidas: diez salidas de consola y tres vistas de documentos.")
     rotos=[]
     for md in ROOT.rglob("*.md"):
         for enlace in re.findall(r'\[[^\]]*\]\(([^)]+)\)',md.read_text(encoding="utf-8")):
@@ -75,9 +76,17 @@ def main():
             if enlace and destino!=ROOT/"evidencias/validacion.json" and not destino.exists(): rotos.append((str(md.relative_to(ROOT)),enlace))
     assert not rotos,rotos
     ok("Todos los enlaces locales de los Markdown apuntan a archivos o carpetas existentes.")
-    for carpeta in ["02-investigacion-historia-ia/documentos","03-mapa-agentes-inteligentes/documentos"]:
-        assert [x.name for x in (ROOT/carpeta).iterdir()]==[".gitkeep"]
-    ok("Las dos carpetas documentales siguen vacías, salvo .gitkeep, para agregar los PDF del alumno.")
+    entregados=json.loads((ROOT/"herramientas/documentos_entregados.json").read_text(encoding="utf-8"))
+    assert len(entregados)==5
+    for documento in entregados:
+        assert hashlib.sha256((ROOT/documento["archivo"]).read_bytes()).hexdigest()==documento["sha256"]
+    ok("Cinco archivos originales incorporados: tres PDF, una fuente LaTeX y una imagen del mapa mental.")
+    readme=(ROOT/"README.md").read_text(encoding="utf-8")
+    assert len(re.findall(r"^## [a-l][.]",readme,re.MULTILINE))==12
+    assert not any(linea.startswith("| ") for linea in readme.splitlines())
+    assert "Cada práctica contiene su explicación" not in readme
+    assert "El orden se obtuvo de los" not in readme
+    ok("README organizado en doce apartados con imágenes, sin tabla ni el bloque final anterior.")
     crew=json.loads((ROOT/"07-crewai/resultados/ejecucion.json").read_text(encoding="utf-8"))
     assert len(crew["tareas"])==2 and all(t["salida"].strip() for t in crew["tareas"])
     ok("CrewAI registró las respuestas reales de sus dos agentes con el modelo local.")

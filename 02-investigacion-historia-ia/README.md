@@ -1,8 +1,11 @@
-# Investigación e historia de la IA
+# Historia de la inteligencia artificial
 
-Pendiente de agregar tus documentos. La carpeta `documentos/` queda preparada para:
+Investigación de la historia de la IA y evidencia de la lectura analítica en el cuaderno.
 
-- `historia_fundamentos_ia.pdf`: investigación o reporte de historia y fundamentos.
-- `resumen_lectura.pdf`: resumen de la lectura, si corresponde a tu entrega.
+- [Reporte de historia de la IA](reporte_historia_ia_2430085.pdf).
+- [Fuente del reporte en LaTeX](reporte_historia_ia_2430085.tex).
+- [Evidencia del cuaderno](evidencia_cuaderno_2430085.pdf).
 
-No se incluyeron los trabajos ni las capturas de otros alumnos.
+![Reporte de historia de la IA](../evidencias/02-historia.png)
+
+![Lectura analítica en el cuaderno](../evidencias/02-cuaderno.png)

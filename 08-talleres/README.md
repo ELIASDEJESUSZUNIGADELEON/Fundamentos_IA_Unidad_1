@@ -8,4 +8,4 @@
 | 8.4 | [Algoritmos evolutivos](04-algoritmos-evolutivos/) | Laberinto con selección, cruce y mutación |
 | 8.5 | [Visión por computadora](05-vision-computadora/) | Clasificación de limón, naranja y fondo |
 
-Cada taller incluye script, cuaderno, resultados y una captura del reporte de ejecución. Son implementaciones reconstruidas de los temas identificados en los repositorios de referencia. No acreditan una exposición en clase ni recuperan los materiales perdidos del disco.
+Cada taller incluye su código, cuaderno, resultados y las imágenes de salida de la práctica.
