@@ -1,0 +1,152 @@
+[
+  {
+    "id": "01-entorno",
+    "titulo": "Configuración del entorno",
+    "script": "01-configuracion-entorno/verificar_entorno.py",
+    "inicio": "2026-11-20T16:31:48.880998-06:00",
+    "segundos": 81.422599,
+    "codigo_salida": 0,
+    "comando_legible": "python 01-configuracion-entorno/verificar_entorno.py",
+    "comando_real": [
+      "C:\\Users\\elias\\Downloads\\Said - github\\.venv-u1\\Scripts\\python.exe",
+      "verificar_entorno.py"
+    ],
+    "sha256_codigo": "9b200e3746a6899b98c7f21d8051ad0250ec9cb0cbfe5eb307bc022369d44c5a",
+    "salida": "IPython         9.18.1\nnotebook        7.6.5\nnumpy           2.5.5\nmatplotlib      3.11.2\nscipy           1.18.1\nsklearn         1.9.1\nPython: 3.14.10 | Ejecutable: C:\\Users\\elias\\Downloads\\Said - github\\.venv-u1\\Scripts\\python.exe\nPrueba de regresión y=2x: para x=4 se obtuvo 8.00\n"
+  },
+  {
+    "id": "04-clientes",
+    "titulo": "Bash: limpieza de clientes",
+    "script": "04-bash-limpieza-clientes/limpiar.sh",
+    "inicio": "2026-11-20T16:33:10.315318-06:00",
+    "segundos": 0.578506,
+    "codigo_salida": 0,
+    "comando_legible": "bash 04-bash-limpieza-clientes/limpiar.sh",
+    "comando_real": [
+      "C:\\Program Files\\Git\\bin\\bash.exe",
+      "limpiar.sh"
+    ],
+    "sha256_codigo": "8f19ee432b5016503ed90682daf1460ba40d1dea92574f568fd52370efde1505",
+    "salida": "Filas originales: 8\nFilas limpias: 4\nid,nombre,edad,salario,departamento\n1,Ana Gomez,25,35000,VENTAS\n3,Maria lopez,35,50000,TI\n5,Pedro Soto,22,17000,VENTAS\n7,sofica cruz,29,38000,MARKETING\n\nDepartamentos únicos ordenados:\nMARKETING\nTI\nVENTAS\n\nPersonas de ventas:\nid,nombre,edad,salario,departamento\n1,Ana Gomez,25,35000,VENTAS\n5,Pedro Soto,22,17000,VENTAS\n"
+  },
+  {
+    "id": "05-pib",
+    "titulo": "Bash: PIB y satisfacción",
+    "script": "05-bash-pib-satisfaccion/preparar.sh",
+    "inicio": "2026-11-20T16:34:44.155450-06:00",
+    "segundos": 0.511024,
+    "codigo_salida": 0,
+    "comando_legible": "bash 05-bash-pib-satisfaccion/preparar.sh",
+    "comando_real": [
+      "C:\\Program Files\\Git\\bin\\bash.exe",
+      "preparar.sh"
+    ],
+    "sha256_codigo": "680e677977ee479f591194dc21939929056e872741bcb76c048dfa291fd71b07",
+    "salida": "Líneas de los archivos fuente:\n  3293 datos/oecd_bli_2015.csv\n   191 datos/gdp_per_capita.csv\n  3484 total\n\nPaíses unidos: 36\nPais,Satisfaccion_Vida,PIB_Capita\nAustralia,7.3,50961.865\nAustria,6.9,43724.031\nBelgium,6.9,40106.632\nBrazil,7,8669.998\nCanada,7.3,43331.961\nChile,6.7,13340.905\nCzech Republic,6.5,17256.918\nDenmark,7.5,52114.165\n\nX.csv e y.csv conservan el mismo orden de países.\n"
+  },
+  {
+    "id": "06-logica",
+    "titulo": "Lógica proposicional e inferencia",
+    "script": "06-logica-proposicional/logica.py",
+    "inicio": "2026-11-20T16:33:11.782037-06:00",
+    "segundos": 0.09401,
+    "codigo_salida": 0,
+    "comando_legible": "python 06-logica-proposicional/logica.py",
+    "comando_real": [
+      "C:\\Users\\elias\\Downloads\\Said - github\\.venv-u1\\Scripts\\python.exe",
+      "logica.py"
+    ],
+    "sha256_codigo": "51d3f63cbdfb7c029538ecf6d48a1a78abe8f96747ab6a72b3e31cdce63f16dc",
+    "salida": "Tablas: 4 combinaciones de dos variables y 8 de tres variables.\n{\n  \"ley_distributiva\": true,\n  \"de_morgan\": true,\n  \"modus_ponens_valido\": true,\n  \"contraejemplo_afirmacion_consecuente\": [\n    [\n      false,\n      true\n    ]\n  ],\n  \"politicas_equivalentes\": false\n}\nCaso admin=True, clave=False, suspendida=True:\nPolítica ambigua: permite acceso. Política estructurada: deniega acceso.\n"
+  },
+  {
+    "id": "08-1-red-neuronal",
+    "titulo": "Red neuronal NumPy y MNIST",
+    "script": "08-talleres/01-red-neuronal/red_mnist.py",
+    "inicio": "2026-11-20T16:33:11.877450-06:00",
+    "segundos": 3.493445,
+    "codigo_salida": 0,
+    "comando_legible": "python 08-talleres/01-red-neuronal/red_mnist.py",
+    "comando_real": [
+      "C:\\Users\\elias\\Downloads\\Said - github\\.venv-u1\\Scripts\\python.exe",
+      "red_mnist.py"
+    ],
+    "sha256_codigo": "06441c5580338402efd5c0a88e3b6a468a5f62bf31aff5e617a0ebce0ccd382b",
+    "salida": "MNIST: 60000 imágenes originales de entrenamiento; prueba: 10000.\nEntrenamiento didáctico: 1000 imágenes, 784-100-10, 100 épocas, lote=32.\nReLU + dropout 0.5; pérdida = SSE promedio por imagen; semilla=2430085.\nÉpoca   1: SSE=0.5559, exactitud train=73.00%, test=66.59%\nÉpoca   5: SSE=0.3285, exactitud train=87.10%, test=77.83%\nÉpoca  10: SSE=0.2621, exactitud train=92.90%, test=84.25%\nÉpoca  15: SSE=0.1823, exactitud train=95.10%, test=84.64%\nÉpoca  20: SSE=0.1572, exactitud train=96.80%, test=86.45%\nÉpoca  25: SSE=0.1492, exactitud train=97.30%, test=87.04%\nÉpoca  30: SSE=0.1323, exactitud train=98.20%, test=86.97%\nÉpoca  35: SSE=0.1137, exactitud train=98.00%, test=87.90%\nÉpoca  40: SSE=0.1210, exactitud train=98.60%, test=87.82%\nÉpoca  45: SSE=0.1075, exactitud train=98.60%, test=87.42%\nÉpoca  50: SSE=0.1098, exactitud train=98.60%, test=87.02%\nÉpoca  55: SSE=0.1070, exactitud train=98.90%, test=87.58%\nÉpoca  60: SSE=0.0988, exactitud train=99.30%, test=87.64%\nÉpoca  65: SSE=0.0957, exactitud train=99.30%, test=87.87%\nÉpoca  70: SSE=0.0952, exactitud train=99.50%, test=87.49%\nÉpoca  75: SSE=0.0794, exactitud train=99.60%, test=88.69%\nÉpoca  80: SSE=0.0700, exactitud train=99.70%, test=88.32%\nÉpoca  85: SSE=0.0702, exactitud train=99.70%, test=88.63%\nÉpoca  90: SSE=0.0702, exactitud train=99.60%, test=88.94%\nÉpoca  95: SSE=0.0610, exactitud train=99.70%, test=87.69%\nÉpoca 100: SSE=0.0543, exactitud train=99.70%, test=88.34%\nEvaluación final independiente: 8834/10000 aciertos.\n"
+  },
+  {
+    "id": "08-2-difusa",
+    "titulo": "Lógica difusa: propina",
+    "script": "08-talleres/02-logica-difusa/propina.py",
+    "inicio": "2026-11-20T16:34:44.667975-06:00",
+    "segundos": 1.300223,
+    "codigo_salida": 0,
+    "comando_legible": "python 08-talleres/02-logica-difusa/propina.py",
+    "comando_real": [
+      "C:\\Users\\elias\\Downloads\\Said - github\\.venv-u1\\Scripts\\python.exe",
+      "propina.py"
+    ],
+    "sha256_codigo": "daa27203522a2de574acdf7acd333c5e6fba2bfc7060622923577a0f03cb7044",
+    "salida": "OR(0.8,0.4)=0.8, AND=0.4, NOT(0.8)=0.2\nComida= 6.5, servicio= 9.8 -> propina=19.85%\nComida=   2, servicio=   3 -> propina=10.84%\nComida=   5, servicio=   5 -> propina=12.67%\nComida=   9, servicio=   9 -> propina=16.81%\nComida=   2, servicio=   9 -> propina=13.06%\nEl caso comida=2, servicio=9 activa propina baja y alta: el centroide equilibra ambas.\n"
+  },
+  {
+    "id": "08-3-nlp",
+    "titulo": "Procesamiento de lenguaje natural",
+    "script": "08-talleres/03-nlp/sentimientos.py",
+    "inicio": "2026-11-20T16:33:16.685133-06:00",
+    "segundos": 0.737132,
+    "codigo_salida": 0,
+    "comando_legible": "python 08-talleres/03-nlp/sentimientos.py",
+    "comando_real": [
+      "C:\\Users\\elias\\Downloads\\Said - github\\.venv-u1\\Scripts\\python.exe",
+      "sentimientos.py"
+    ],
+    "sha256_codigo": "0c9334c0f74d584f3bf24dc0176f0a0fb2bbc8740c9ee7dc546d4167523b3178",
+    "salida": "positivo (+2): El taller fue excelente y divertido.\nnegativo (-2): La experiencia fue horrible y aburrida.\nneutral  (+0): La clase empieza a las ocho.\nnegativo (-1): No es bueno.\npositivo (+1): No es malo.\nnegativo (-1): Bueno, pero aburrido.\npositivo (+2): Fue increíble, ¡lo recomiendo!\npositivo (+1): Sí, excelente... otra falla del sistema.\nLimitación observada: el sarcasmo de la última frase se clasifica como positivo.\n"
+  },
+  {
+    "id": "08-4-evolutivos",
+    "titulo": "Algoritmo genético: laberinto",
+    "script": "08-talleres/04-algoritmos-evolutivos/laberinto.py",
+    "inicio": "2026-11-20T16:34:45.969810-06:00",
+    "segundos": 4.496097,
+    "codigo_salida": 0,
+    "comando_legible": "python 08-talleres/04-algoritmos-evolutivos/laberinto.py",
+    "comando_real": [
+      "C:\\Users\\elias\\Downloads\\Said - github\\.venv-u1\\Scripts\\python.exe",
+      "laberinto.py"
+    ],
+    "sha256_codigo": "c22c9daaaed59e8110ca33fb2b3a979b686436f9bdbdd70da38aa5bef6ed1347",
+    "salida": "Generación 0: fitness=-289.40; meta=False\nGeneración 10: fitness=-217.90; meta=False\nGeneración 20: fitness=-143.70; meta=False\nGeneración 30: fitness=-98.30; meta=False\nGeneración 40: fitness=-54.90; meta=False\nGeneración 50: fitness=-31.70; meta=False\nGeneración 60: fitness=-25.70; meta=False\nGeneración 70: fitness=-24.70; meta=False\nGeneración 80: fitness=-12.10; meta=False\nGeneración 90: fitness=-12.10; meta=False\nGeneración 100: fitness=-11.10; meta=False\nGeneración 110: fitness=-10.10; meta=False\nGeneración 120: fitness=-9.10; meta=False\nGeneración 130: fitness=-8.10; meta=False\nGeneración 140: fitness=-8.10; meta=False\nGeneración 150: fitness=-8.10; meta=False\nGeneración 160: fitness=-8.10; meta=False\nGeneración 170: fitness=-8.10; meta=False\nGeneración 172: fitness=8382.00; meta=True\nMeta alcanzada en generación 172; movimientos válidos=142; distancia óptima BFS=54.\nBFS solo calculó distancias de evaluación. La secuencia fue producida por selección, cruce y mutación.\n"
+  },
+  {
+    "id": "08-5-vision",
+    "titulo": "Visión por computadora",
+    "script": "08-talleres/05-vision-computadora/clasificar_frutas.py",
+    "inicio": "2026-11-20T16:33:18.234187-06:00",
+    "segundos": 4.402262,
+    "codigo_salida": 0,
+    "comando_legible": "python 08-talleres/05-vision-computadora/clasificar_frutas.py",
+    "comando_real": [
+      "C:\\Users\\elias\\Downloads\\Said - github\\.venv-u1\\Scripts\\python.exe",
+      "clasificar_frutas.py"
+    ],
+    "sha256_codigo": "0d797c181a54c6ff9b368218527a25d3933778a0f4d3026d11aaa66f4b3e9996",
+    "salida": "Entrenamiento: 47 fotos; clases: fondo, limon, naranja.\nValidación cruzada estratificada (3 pliegues): 93.75%. Fotos de la misma sesión: estimación orientativa.\nPrueba_Limon_Fondo_Diferente.jpeg: pred=limon; real=limon; repetida=False\nPrueba_Limon_No_Luz.jpeg: pred=limon; real=limon; repetida=False\nPrueba_Limon_Original.jpeg: pred=limon; real=limon; repetida=True\nPrueba_Naranja_Fondo_Diferente.jpeg: pred=limon; real=naranja; repetida=False\nPrueba_Naranja_No_Luz.jpeg: pred=naranja; real=naranja; repetida=False\nPrueba_Naranja_Original.jpeg: pred=naranja; real=naranja; repetida=True\nEvaluación excluyendo fotos repetidas: 3/4 aciertos.\nEl cambio de luz/fondo puede degradar un clasificador basado en color.\n"
+  },
+  {
+    "id": "07-crewai",
+    "titulo": "CrewAI con modelo local",
+    "script": "07-crewai/main.py",
+    "inicio": "2026-11-20T16:39:54.816807-06:00",
+    "segundos": 37.690654,
+    "codigo_salida": 0,
+    "comando_legible": "python 07-crewai/main.py",
+    "comando_real": [
+      "C:\\Users\\elias\\Downloads\\Said - github\\.venv-crewai\\Scripts\\python.exe",
+      "main.py"
+    ],
+    "sha256_codigo": "784804e5c3ddf4450a433af0fd5f478bca77788fb454552f5661fc840a9bb974",
+    "salida": "CrewAI 1.15.44 | Ollama qwen2.5:1.5b | http://127.0.0.1:11435\nDos agentes, dos tareas reales, proceso secuencial, tres fuentes oficiales curadas.\nTareas completadas: 2; duración: 34.2 s\nTokens registrados por CrewAI: {'total_tokens': 4310, 'prompt_tokens': 2530, 'cached_prompt_tokens': 10, 'completion_tokens': 1780, 'reasoning_tokens': 0, 'cache_creation_tokens': 0, 'successful_requests': 4}\nInforme: resultados/informe.md\n# Agentes Colaborativos en CrewAI y Ollama\n\nEn CrewAI, dos agentes cooperan para realizar tareas utilizando un modelo local. El proceso se divide en tres etapas: configuración del agente, definición de tareas y ejecución local.\n\n1. **Configuración del Agente**: Cada agente se configura con un rol, una meta y un contexto. Por ejemplo, un agente puede ser un \"agente de investigación\" con la meta de \"descubrir información relevante\" y un contexto específico de un proyecto.\n\n2. **Definición de Tareas**: Una tarea en CrewAI se define con una descripción y un resultado esperado. Por ejemplo, una tarea podría ser \"buscar información sobre el clima en una ciudad específica\" con el resultado esperado de \"información detallada sobre el clima de la ciudad\".\n\n3. **Ejecución Local**: Una tarea puede usar como contexto la salida de una tarea anterior. Por ejemplo, una tarea de \"buscar información sobre el clima\" podría usar la salida de una tarea anterior de \"descubrir información relevante\" para proporcionar contexto sobre la relevancia de la información encontrada.\n\nEn este proceso, la integración de Ollama se realiza utilizando el modelo local. CrewAI permite configurar un LLM mediante un identificador de modelo y una URL base. La integración de Ollama utiliza LiteLLM y requiere la dependencia crewai[litellm]. Ollama debe estar ejecutándose con el modelo descargado.\n\nLas tres fuentes mencionadas proporcionan una comprensión completa del proceso de cooperación entre agentes en CrewAI. La configuración del agente, la definición de tareas y la ejecución local son fundamentales para el correcto funcionamiento del sistema. Además, la integración de Ollama y el uso de modelos locales son características clave que permiten la colaboración efectiva entre agentes.\n\n---\n\n**Referencias:**\n[1] Agentes de CrewAI — https://docs.crewai.com/en/concepts/agents\n[2] Equipos y procesos en CrewAI — https://docs.crewai.com/en/concepts/crews\n[3] Modelos locales con Ollama — https://docs.crewai.com/en/concepts/llms\n\nSTDERR:\nUsing an approximate input token count for model 'qwen2.5:1.5b': assuming one token per four characters because a native token count is unavailable.\nWARNING:crewai.llms.base_llm:Using an approximate input token count for model 'qwen2.5:1.5b': assuming one token per four characters because a native token count is unavailable.\n"
+  }
+]

@@ -1,0 +1,359 @@
+{
+  "verificado_utc": "2026-11-20T22:26:05.941231+00:00",
+  "archivos": [
+    {
+      "archivo": "05-bash-pib-satisfaccion/datos/oecd_bli_2015.csv",
+      "url": "https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/lifesat/oecd_bli_2015.csv",
+      "sha256": "7586f494d3d0c7164a1dff89bc5d6dcbd3fef1cd23afce11c5702a43b42ebd7c",
+      "bytes": 405467
+    },
+    {
+      "archivo": "05-bash-pib-satisfaccion/datos/gdp_per_capita.csv",
+      "url": "https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/lifesat/gdp_per_capita.csv",
+      "sha256": "b7901e2e17421be2ae3124101ba853d57650b7263b116d370595a855c9e2979d",
+      "bytes": 36323
+    },
+    {
+      "archivo": "08-talleres/01-red-neuronal/datos/train-images-idx3-ubyte.gz",
+      "url": "https://ossci-datasets.s3.amazonaws.com/mnist/train-images-idx3-ubyte.gz",
+      "sha256": "440fcabf73cc546fa21475e81ea370265605f56be210a4024d2ca8f203523609",
+      "bytes": 9912422
+    },
+    {
+      "archivo": "08-talleres/01-red-neuronal/datos/train-labels-idx1-ubyte.gz",
+      "url": "https://ossci-datasets.s3.amazonaws.com/mnist/train-labels-idx1-ubyte.gz",
+      "sha256": "3552534a0a558bbed6aed32b30c495cca23d567ec52cac8be1a0730e8010255c",
+      "bytes": 28881
+    },
+    {
+      "archivo": "08-talleres/01-red-neuronal/datos/t10k-images-idx3-ubyte.gz",
+      "url": "https://ossci-datasets.s3.amazonaws.com/mnist/t10k-images-idx3-ubyte.gz",
+      "sha256": "8d422c7b0a1c1c79245a5bcf07fe86e33eeafee792b84584aec276f5a2dbc4e6",
+      "bytes": 1648877
+    },
+    {
+      "archivo": "08-talleres/01-red-neuronal/datos/t10k-labels-idx1-ubyte.gz",
+      "url": "https://ossci-datasets.s3.amazonaws.com/mnist/t10k-labels-idx1-ubyte.gz",
+      "sha256": "f7ae60f92e00ec6debd23a6088c31dbd2371eca3ffa0defaefb259924204aec6",
+      "bytes": 4542
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/fondo/Fondo1.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/fondo/Fondo1.jpeg",
+      "sha256": "24b4ece2df17321d6aaeb11a1cc616e54dc8387e431a3b0bb9773838b46b244d",
+      "bytes": 131923
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/fondo/Fondo10.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/fondo/Fondo10.jpeg",
+      "sha256": "0acdedef56b1a9e87282547a7fd6e27f8356fd04b20f1a7890ce9ab67dada4b3",
+      "bytes": 113797
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/fondo/Fondo11.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/fondo/Fondo11.jpeg",
+      "sha256": "bfdd6253edc336103636e4a2942ec66b1ca1c31e96292fd71e1aa88b195af257",
+      "bytes": 115018
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/fondo/Fondo12.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/fondo/Fondo12.jpeg",
+      "sha256": "077643595e20df7e966786bc0f4a7b5c8b8d625574b9909c6292ea8bd811b49e",
+      "bytes": 114540
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/fondo/Fondo13.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/fondo/Fondo13.jpeg",
+      "sha256": "5c26c83b0c968a189f1274e01e472bdbc673f21e4cb62ec91f68fe7fde2c41d0",
+      "bytes": 131230
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/fondo/Fondo14.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/fondo/Fondo14.jpeg",
+      "sha256": "f5a5be2bed4fa57af8bec6758214a33362b4c5516f0935b9c48d825fce459914",
+      "bytes": 129995
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/fondo/Fondo15.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/fondo/Fondo15.jpeg",
+      "sha256": "5dee747a62942ef76b661ea259fc442ecdae7b3da98ee00e9da9a53913fc665a",
+      "bytes": 121865
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/fondo/Fondo2.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/fondo/Fondo2.jpeg",
+      "sha256": "362faba1e800216ae3895cdc96bbb7b0dd19834fe0b32b326de160c345e3ee4d",
+      "bytes": 122033
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/fondo/Fondo3.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/fondo/Fondo3.jpeg",
+      "sha256": "8e31372bb41632f0f824230777c6163b3d4ae99342edd2d7391371d74d9a084e",
+      "bytes": 143701
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/fondo/Fondo4.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/fondo/Fondo4.jpeg",
+      "sha256": "f2939ee344c758d8e2f9199e4936cb3a4e29713cb1e3138c225d54a1cd19cdfe",
+      "bytes": 126581
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/fondo/Fondo5.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/fondo/Fondo5.jpeg",
+      "sha256": "4bca66d40af6eb3a4f01b1981e00762c1746934c289289141db159165f0a625d",
+      "bytes": 133261
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/fondo/Fondo6.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/fondo/Fondo6.jpeg",
+      "sha256": "e6601016d8231941553d97124c1c70141a92d644131a4141525a3fff1a50d466",
+      "bytes": 99060
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/fondo/Fondo7.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/fondo/Fondo7.jpeg",
+      "sha256": "d47a7f0f3ebd687b812fec7b8cb7e9d0545759a2fa50329e138d711a559fd841",
+      "bytes": 121557
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/fondo/Fondo8.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/fondo/Fondo8.jpeg",
+      "sha256": "48f67c12aae63bd858a77a4d9315270314f245d10259f9d7bc1a74905b72fb55",
+      "bytes": 105289
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/fondo/Fondo9.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/fondo/Fondo9.jpeg",
+      "sha256": "7ef10861bbfa17d1c38f7853fea153f5004f4ae0bf3a7b974511722e979509cc",
+      "bytes": 127060
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/limon/Limon10.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/limon/Limon10.jpeg",
+      "sha256": "b1d4107dbb4f68da4fd1e07ca039613b713d47666dabf83bbc73ecfe59467030",
+      "bytes": 110893
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/limon/Limon11.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/limon/Limon11.jpeg",
+      "sha256": "e434a4aeb395dceae655b7e0155c59ed6f660a2be3f1b538f88cfb49500eb0d5",
+      "bytes": 91443
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/limon/Limon12.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/limon/Limon12.jpeg",
+      "sha256": "c7f7a334d1f3335b85c109fe39960a4fb1d6673e958187d36ba88b76be00f1ac",
+      "bytes": 113295
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/limon/Limon13.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/limon/Limon13.jpeg",
+      "sha256": "a8741729e8d3e2599a3b271b63b7648b2e3d3f20c704324b25b90acfc37c7ac1",
+      "bytes": 100894
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/limon/Limon14.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/limon/Limon14.jpeg",
+      "sha256": "07cfa62d9fd0b64576903b7867d7324f32f760aca9271e285c3bc3cb1050d49d",
+      "bytes": 89728
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/limon/Limon15.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/limon/Limon15.jpeg",
+      "sha256": "0e6d89396d6f79d07b05252cfcc493eb7b17e964aad3c08c40e4b03ea997203d",
+      "bytes": 96308
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/limon/Limon1jpeg.jpg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/limon/Limon1jpeg.jpg",
+      "sha256": "17104dd83514725d95b1684a9f9c3ba65e4409d6de38a4bd492d98e8adb49375",
+      "bytes": 68140
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/limon/Limon2.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/limon/Limon2.jpeg",
+      "sha256": "cc05667abddeb0f501d7eef6338f0521273936d414e61f5e238b7bda576a2aa5",
+      "bytes": 89240
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/limon/Limon3.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/limon/Limon3.jpeg",
+      "sha256": "d4166e2cbc2cb9f743574dab757913327ded09b9573e36fab4975b50143437cb",
+      "bytes": 80008
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/limon/Limon4.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/limon/Limon4.jpeg",
+      "sha256": "f5aa9c8e3e1b4bc56d3e6bf2c912f7b5fd256cb77e9915eeb932b4324dc3f5d8",
+      "bytes": 99757
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/limon/Limon5.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/limon/Limon5.jpeg",
+      "sha256": "b13732aec6183bc074cf35ba1a8e7607002fae37d89fc267a104b2e28915869e",
+      "bytes": 125600
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/limon/Limon6.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/limon/Limon6.jpeg",
+      "sha256": "f1236e51c1f87167dce46d663f1ce7a1a825b6ccdeeff5b8063721363ae6b20c",
+      "bytes": 118463
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/limon/Limon7.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/limon/Limon7.jpeg",
+      "sha256": "3a41f37002b743014a0c9a5da7ed1c3c9e55fd5529c72d94c3d15aa1483af6a4",
+      "bytes": 105950
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/limon/Limon8.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/limon/Limon8.jpeg",
+      "sha256": "54a37473ada651194def4ff3ff903f3fbc6b4064164eb8e46048e168faf9d657",
+      "bytes": 122804
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/limon/Limon9.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/limon/Limon9.jpeg",
+      "sha256": "cc4c67a6f290fb44c989387723bb2209fb9414f9e4134be94daf96ff963b8c03",
+      "bytes": 122736
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/naranja/Naranja 1.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/naranja/Naranja%201.jpeg",
+      "sha256": "eac4da4cfe2772d793d2c579250a68f81025b81b6a64c0baefc2eb98698365cb",
+      "bytes": 74648
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/naranja/Naranja10.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/naranja/Naranja10.jpeg",
+      "sha256": "93f327b79385fe20d30484bbcd7bc34d93399657b169be8b8178a475c961d092",
+      "bytes": 90690
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/naranja/Naranja11.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/naranja/Naranja11.jpeg",
+      "sha256": "964e244d491021f56f3e6010a57c85481579e82a80a370a41f60537be8b9cdce",
+      "bytes": 50241
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/naranja/Naranja12.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/naranja/Naranja12.jpeg",
+      "sha256": "43a8bf88c27c115ca106f87e13c21365f1d2630a909e885359a16824e3397eaf",
+      "bytes": 77200
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/naranja/Naranja13.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/naranja/Naranja13.jpeg",
+      "sha256": "52af039e67cf2520b40549c56bcb314f16dfc3f5075dfcfb03982e2f32638b52",
+      "bytes": 66266
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/naranja/Naranja14.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/naranja/Naranja14.jpeg",
+      "sha256": "77e44676a3a8bc11c1292f4c087f45b82d59634f16783000b8f73e1eaf4783b1",
+      "bytes": 57836
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/naranja/Naranja15.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/naranja/Naranja15.jpeg",
+      "sha256": "318d4cf2ac2c9d9069e417634fe13b6174fe781d9545addd1b4f80624291b70e",
+      "bytes": 62611
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/naranja/Naranja16.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/naranja/Naranja16.jpeg",
+      "sha256": "3cda0be34d14c3b1361dbdccc1b88046cf4adae9994df94f53b90c68da64f940",
+      "bytes": 72979
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/naranja/Naranja17.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/naranja/Naranja17.jpeg",
+      "sha256": "08b72b3ead95fbd9e04586e679a88a53ae07bab51648da1540ce022da28e6290",
+      "bytes": 53013
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/naranja/Naranja2.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/naranja/Naranja2.jpeg",
+      "sha256": "fdaa68ae8105cb5860da7086b9250438c5dde17bc60d6eb7cb1d2bbcb8281183",
+      "bytes": 55968
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/naranja/Naranja3.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/naranja/Naranja3.jpeg",
+      "sha256": "8dc832788aec27b8279c66f69c9f00c56bcf10fe26e6a50543ad3b7abae0174c",
+      "bytes": 57935
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/naranja/Naranja4.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/naranja/Naranja4.jpeg",
+      "sha256": "b2232c9d48051bee7b52f4850ec229f905512e4631a1908ff0f16f939dd14477",
+      "bytes": 59164
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/naranja/Naranja5.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/naranja/Naranja5.jpeg",
+      "sha256": "dd2fe4479d329f1be992c88afd3c5a325da35df20fa7bd6bfd3e5f400e8a9763",
+      "bytes": 71759
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/naranja/Naranja6.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/naranja/Naranja6.jpeg",
+      "sha256": "e48070ddade9ff676b5c9d48b6264de760bcd2476b0d6cd96dde170622d12365",
+      "bytes": 96128
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/naranja/Naranja7.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/naranja/Naranja7.jpeg",
+      "sha256": "5da71275c2ee0b7503bd45d26e2eff94fbd90a2d3d8cfd4c2d9f68acf2be8cb5",
+      "bytes": 48384
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/naranja/Naranja8.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/naranja/Naranja8.jpeg",
+      "sha256": "62a3d8066101663833e0b7285c1387f246166dc51d98c2c06c2713dc09da8e14",
+      "bytes": 71394
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/entrenamiento/naranja/Naranja9.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/entrenamiento/naranja/Naranja9.jpeg",
+      "sha256": "0927f3e4fe52db70f2abefaabec4116bf90945585de1dc02cb7106e22d9388d5",
+      "bytes": 61978
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/pruebas/Prueba_Limon_Fondo_Diferente.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/pruebas/Prueba_Limon_Fondo_Diferente.jpeg",
+      "sha256": "728832b61aa78367abd5e1c6cfd6be93a0ff4b3b339c01471160692922888be1",
+      "bytes": 144479
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/pruebas/Prueba_Limon_No_Luz.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/pruebas/Prueba_Limon_No_Luz.jpeg",
+      "sha256": "b58ec01625e227450bfd5b71c9be658870aa1ad1ca9184523f790934b22cc9c4",
+      "bytes": 67653
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/pruebas/Prueba_Limon_Original.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/pruebas/Prueba_Limon_Original.jpeg",
+      "sha256": "54a37473ada651194def4ff3ff903f3fbc6b4064164eb8e46048e168faf9d657",
+      "bytes": 122804
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/pruebas/Prueba_Naranja_Fondo_Diferente.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/pruebas/Prueba_Naranja_Fondo_Diferente.jpeg",
+      "sha256": "64b6bb8c05d88e20f61d340842ea97605800311c6523878da43c6ea59b78b264",
+      "bytes": 114657
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/pruebas/Prueba_Naranja_No_Luz.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/pruebas/Prueba_Naranja_No_Luz.jpeg",
+      "sha256": "29152aca851ab3e68d383a49a9267d6ab681bb6312a803259331b6300368c4bc",
+      "bytes": 48747
+    },
+    {
+      "archivo": "08-talleres/05-vision-computadora/datos/pruebas/Prueba_Naranja_Original.jpeg",
+      "url": "https://raw.githubusercontent.com/cesar-upv/2430233_FUNDAMENTOS_IA_UNIDAD_1/99c30b7430857cf2e2ca67de810895a1a75ab336/06-talleres/vision-por-computadora/assets-taller/pruebas/Prueba_Naranja_Original.jpeg",
+      "sha256": "0927f3e4fe52db70f2abefaabec4116bf90945585de1dc02cb7106e22d9388d5",
+      "bytes": 61978
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "muestras_train": 1000,
+  "muestras_test": 10000,
+  "epocas": 100,
+  "exactitud_train": 0.997,
+  "exactitud_test": 0.8834,
+  "sse_train": 0.05425013601779938,
+  "semilla": 2430085,
+  "sha256_pesos": "0f2c94920c97735b0bfd7f7e94ebf0a07b36abcbe8377d78e54577979e24d561"
+}

@@ -1,0 +1,9 @@
+texto,sentimiento,puntaje
+El taller fue excelente y divertido.,positivo,2
+La experiencia fue horrible y aburrida.,negativo,-2
+La clase empieza a las ocho.,neutral,0
+No es bueno.,negativo,-1
+No es malo.,positivo,1
+"Bueno, pero aburrido.",negativo,-1
+"Fue increíble, ¡lo recomiendo!",positivo,2
+"Sí, excelente... otra falla del sistema.",positivo,1

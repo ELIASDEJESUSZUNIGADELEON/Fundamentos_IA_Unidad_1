@@ -1,0 +1,8 @@
+{
+  "caso_principal": [
+    6.5,
+    9.8,
+    19.847607361963192
+  ],
+  "metodo": "Mamdani; min/max; centroide"
+}

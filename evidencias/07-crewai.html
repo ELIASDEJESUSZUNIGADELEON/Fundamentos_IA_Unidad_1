@@ -1,0 +1,29 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>CrewAI con modelo local</title><style>*{box-sizing:border-box}body{margin:0;padding:44px;background:#f2f5f9;color:#182638;font:18px 'Segoe UI',sans-serif}main{max-width:1280px;margin:auto}h1{font-size:34px;margin:10px 0}h2{font-size:22px}header{border-left:7px solid #297568;padding-left:24px;margin-bottom:24px}p{line-height:1.5}.meta{color:#526171;font-size:15px}pre{background:#172638;color:#e5edf6;padding:24px;border-radius:9px;white-space:pre-wrap;overflow-wrap:anywhere;font:16px/1.5 Consolas,monospace}figure{margin:22px 0;padding:16px;background:white;border:1px solid #dbe2e9;border-radius:9px}img{display:block;width:100%;max-height:570px;object-fit:contain}figcaption{padding:10px;font-size:15px;color:#526171}table{width:100%;border-collapse:collapse;background:white;font-size:17px}td,th{text-align:left;padding:13px;border-bottom:1px solid #dce4ed}th{background:#172638;color:white}.ok{color:#15664b}.pending{color:#885c12}a{color:#135ea2}.tag{font-size:15px;letter-spacing:2px;color:#297568;font-weight:bold}</style><main><span class="tag">UNIDAD 1 / EVIDENCIA DE EJECUCIÓN</span><header><h1>CrewAI con modelo local</h1><p>Elias de Jesus Zuñiga de Leon · Matrícula 2430085</p></header><p class="meta">2026-11-20T16:39:54.816807-06:00 · 37.69 s · EJECUTADO · código de salida 0</p><p><b>Comando ejecutado</b></p><pre>python 07-crewai/main.py</pre><h2>Salida de la ejecución</h2><pre>CrewAI 1.15.44 | Ollama qwen2.5:1.5b | http://127.0.0.1:11435
+Dos agentes, dos tareas reales, proceso secuencial, tres fuentes oficiales curadas.
+Tareas completadas: 2; duración: 34.2 s
+Tokens registrados por CrewAI: {&#x27;total_tokens&#x27;: 4310, &#x27;prompt_tokens&#x27;: 2530, &#x27;cached_prompt_tokens&#x27;: 10, &#x27;completion_tokens&#x27;: 1780, &#x27;reasoning_tokens&#x27;: 0, &#x27;cache_creation_tokens&#x27;: 0, &#x27;successful_requests&#x27;: 4}
+Informe: resultados/informe.md
+# Agentes Colaborativos en CrewAI y Ollama
+
+En CrewAI, dos agentes cooperan para realizar tareas utilizando un modelo local. El proceso se divide en tres etapas: configuración del agente, definición de tareas y ejecución local.
+
+1. **Configuración del Agente**: Cada agente se configura con un rol, una meta y un contexto. Por ejemplo, un agente puede ser un &quot;agente de investigación&quot; con la meta de &quot;descubrir información relevante&quot; y un contexto específico de un proyecto.
+
+2. **Definición de Tareas**: Una tarea en CrewAI se define con una descripción y un resultado esperado. Por ejemplo, una tarea podría ser &quot;buscar información sobre el clima en una ciudad específica&quot; con el resultado esperado de &quot;información detallada sobre el clima de la ciudad&quot;.
+
+3. **Ejecución Local**: Una tarea puede usar como contexto la salida de una tarea anterior. Por ejemplo, una tarea de &quot;buscar información sobre el clima&quot; podría usar la salida de una tarea anterior de &quot;descubrir información relevante&quot; para proporcionar contexto sobre la relevancia de la información encontrada.
+
+En este proceso, la integración de Ollama se realiza utilizando el modelo local. CrewAI permite configurar un LLM mediante un identificador de modelo y una URL base. La integración de Ollama utiliza LiteLLM y requiere la dependencia crewai[litellm]. Ollama debe estar ejecutándose con el modelo descargado.
+
+Las tres fuentes mencionadas proporcionan una comprensión completa del proceso de cooperación entre agentes en CrewAI. La configuración del agente, la definición de tareas y la ejecución local son fundamentales para el correcto funcionamiento del sistema. Además, la integración de Ollama y el uso de modelos locales son características clave que permiten la colaboración efectiva entre agentes.
+
+---
+
+**Referencias:**
+[1] Agentes de CrewAI — https://docs.crewai.com/en/concepts/agents
+[2] Equipos y procesos en CrewAI — https://docs.crewai.com/en/concepts/crews
+[3] Modelos locales con Ollama — https://docs.crewai.com/en/concepts/llms
+
+STDERR:
+Using an approximate input token count for model &#x27;qwen2.5:1.5b&#x27;: assuming one token per four characters because a native token count is unavailable.
+WARNING:crewai.llms.base_llm:Using an approximate input token count for model &#x27;qwen2.5:1.5b&#x27;: assuming one token per four characters because a native token count is unavailable.</pre><p class="meta">Salida completa: <a href="07-crewai.txt">07-crewai.txt</a> · SHA-256 del código: 784804e5c3ddf4450a43…</p><p><a href="../07-crewai/resultados/informe.md">Abrir el informe Markdown con su bibliografía</a></p><p class="meta">Captura del reporte HTML construido a partir de la ejecución real. Consulta el código, el TXT y registro_ejecuciones.json para reproducirla.</p></main></html>

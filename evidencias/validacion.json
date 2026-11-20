@@ -1,0 +1,15 @@
+{
+  "fecha_utc": "2026-11-20T22:42:10.691631+00:00",
+  "estado": "correcto",
+  "comprobaciones": [
+    "Unión Bash de 36 países y alineación X/y coinciden con el cálculo independiente en Python.",
+    "Integridad SHA-256 de 59 archivos de datos de entrada.",
+    "Los cuatro archivos MNIST coinciden con las sumas de la distribución original.",
+    "Diez prácticas con salida 0, huellas del código vigentes y evidencia HTML/TXT/PNG.",
+    "Siete cuadernos válidos, ejecutados sin errores, con código completo sincronizado con sus scripts.",
+    "Once capturas PNG válidas, incluido el índice.",
+    "Todos los enlaces locales de los Markdown apuntan a archivos o carpetas existentes.",
+    "Las dos carpetas documentales siguen vacías, salvo .gitkeep, para agregar los PDF del alumno.",
+    "CrewAI registró las respuestas reales de sus dos agentes con el modelo local."
+  ]
+}

@@ -1,0 +1,7 @@
+archivo,real,prediccion,acierto,repetida_en_train
+Prueba_Limon_Fondo_Diferente.jpeg,limon,limon,True,False
+Prueba_Limon_No_Luz.jpeg,limon,limon,True,False
+Prueba_Limon_Original.jpeg,limon,limon,True,True
+Prueba_Naranja_Fondo_Diferente.jpeg,naranja,limon,False,False
+Prueba_Naranja_No_Luz.jpeg,naranja,naranja,True,False
+Prueba_Naranja_Original.jpeg,naranja,naranja,True,True

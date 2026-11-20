@@ -1,0 +1,9 @@
+positivo (+2): El taller fue excelente y divertido.
+negativo (-2): La experiencia fue horrible y aburrida.
+neutral  (+0): La clase empieza a las ocho.
+negativo (-1): No es bueno.
+positivo (+1): No es malo.
+negativo (-1): Bueno, pero aburrido.
+positivo (+2): Fue increíble, ¡lo recomiendo!
+positivo (+1): Sí, excelente... otra falla del sistema.
+Limitación observada: el sarcasmo de la última frase se clasifica como positivo.

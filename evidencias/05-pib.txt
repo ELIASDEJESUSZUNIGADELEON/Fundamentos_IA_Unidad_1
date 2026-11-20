@@ -1,0 +1,17 @@
+Líneas de los archivos fuente:
+  3293 datos/oecd_bli_2015.csv
+   191 datos/gdp_per_capita.csv
+  3484 total
+
+Países unidos: 36
+Pais,Satisfaccion_Vida,PIB_Capita
+Australia,7.3,50961.865
+Austria,6.9,43724.031
+Belgium,6.9,40106.632
+Brazil,7,8669.998
+Canada,7.3,43331.961
+Chile,6.7,13340.905
+Czech Republic,6.5,17256.918
+Denmark,7.5,52114.165
+
+X.csv e y.csv conservan el mismo orden de países.

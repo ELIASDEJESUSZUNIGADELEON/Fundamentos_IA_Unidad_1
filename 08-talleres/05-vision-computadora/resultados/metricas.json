@@ -1,0 +1,14 @@
+{
+  "fotos_entrenamiento": 47,
+  "fotos_prueba": 6,
+  "repetidas_excluidas": 2,
+  "pruebas_diferentes": 4,
+  "aciertos_pruebas_diferentes": 3,
+  "exactitud_pruebas_diferentes": 0.75,
+  "validacion_cruzada": [
+    0.8125,
+    1.0,
+    1.0
+  ],
+  "limitacion": "Solo cuatro pruebas diferentes de limón/naranja; no miden generalización ni la clase fondo."
+}

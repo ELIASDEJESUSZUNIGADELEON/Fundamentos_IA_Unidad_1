@@ -1,0 +1,101 @@
+[
+  {
+    "texto": "El taller fue excelente y divertido.",
+    "sentimiento": "positivo",
+    "puntaje": 2,
+    "coincidencias": [
+      {
+        "token": "excelente",
+        "aporte": 1
+      },
+      {
+        "token": "divertido",
+        "aporte": 1
+      }
+    ]
+  },
+  {
+    "texto": "La experiencia fue horrible y aburrida.",
+    "sentimiento": "negativo",
+    "puntaje": -2,
+    "coincidencias": [
+      {
+        "token": "horrible",
+        "aporte": -1
+      },
+      {
+        "token": "aburrida",
+        "aporte": -1
+      }
+    ]
+  },
+  {
+    "texto": "La clase empieza a las ocho.",
+    "sentimiento": "neutral",
+    "puntaje": 0,
+    "coincidencias": []
+  },
+  {
+    "texto": "No es bueno.",
+    "sentimiento": "negativo",
+    "puntaje": -1,
+    "coincidencias": [
+      {
+        "token": "bueno",
+        "aporte": -1
+      }
+    ]
+  },
+  {
+    "texto": "No es malo.",
+    "sentimiento": "positivo",
+    "puntaje": 1,
+    "coincidencias": [
+      {
+        "token": "malo",
+        "aporte": 1
+      }
+    ]
+  },
+  {
+    "texto": "Bueno, pero aburrido.",
+    "sentimiento": "negativo",
+    "puntaje": -1,
+    "coincidencias": [
+      {
+        "token": "bueno",
+        "aporte": 1
+      },
+      {
+        "token": "aburrido",
+        "aporte": -2
+      }
+    ]
+  },
+  {
+    "texto": "Fue increíble, ¡lo recomiendo!",
+    "sentimiento": "positivo",
+    "puntaje": 2,
+    "coincidencias": [
+      {
+        "token": "increible",
+        "aporte": 1
+      },
+      {
+        "token": "recomiendo",
+        "aporte": 1
+      }
+    ]
+  },
+  {
+    "texto": "Sí, excelente... otra falla del sistema.",
+    "sentimiento": "positivo",
+    "puntaje": 1,
+    "coincidencias": [
+      {
+        "token": "excelente",
+        "aporte": 1
+      }
+    ]
+  }
+]

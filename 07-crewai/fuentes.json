@@ -1,0 +1,17 @@
+[
+  {
+    "titulo": "Agentes de CrewAI",
+    "url": "https://docs.crewai.com/en/concepts/agents",
+    "nota": "Un agente se configura con un rol, una meta y un contexto. Puede recibir herramientas y un modelo de lenguaje para realizar tareas. La delegación entre agentes es configurable."
+  },
+  {
+    "titulo": "Equipos y procesos en CrewAI",
+    "url": "https://docs.crewai.com/en/concepts/crews",
+    "nota": "Un Crew agrupa agentes y tareas. Un proceso secuencial ejecuta las tareas en orden; una tarea puede usar como contexto la salida de una anterior. Cada tarea define una descripción y el resultado esperado."
+  },
+  {
+    "titulo": "Modelos locales con Ollama",
+    "url": "https://docs.crewai.com/en/concepts/llms",
+    "nota": "CrewAI permite configurar un LLM mediante un identificador de modelo y una URL base. La integración de Ollama utiliza LiteLLM y requiere la dependencia crewai[litellm]. Ollama debe estar ejecutándose con el modelo descargado."
+  }
+]

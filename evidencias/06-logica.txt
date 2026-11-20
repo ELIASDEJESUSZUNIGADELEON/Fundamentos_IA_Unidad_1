@@ -1,0 +1,15 @@
+Tablas: 4 combinaciones de dos variables y 8 de tres variables.
+{
+  "ley_distributiva": true,
+  "de_morgan": true,
+  "modus_ponens_valido": true,
+  "contraejemplo_afirmacion_consecuente": [
+    [
+      false,
+      true
+    ]
+  ],
+  "politicas_equivalentes": false
+}
+Caso admin=True, clave=False, suspendida=True:
+Política ambigua: permite acceso. Política estructurada: deniega acceso.

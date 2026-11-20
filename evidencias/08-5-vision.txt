@@ -1,0 +1,10 @@
+Entrenamiento: 47 fotos; clases: fondo, limon, naranja.
+Validación cruzada estratificada (3 pliegues): 93.75%. Fotos de la misma sesión: estimación orientativa.
+Prueba_Limon_Fondo_Diferente.jpeg: pred=limon; real=limon; repetida=False
+Prueba_Limon_No_Luz.jpeg: pred=limon; real=limon; repetida=False
+Prueba_Limon_Original.jpeg: pred=limon; real=limon; repetida=True
+Prueba_Naranja_Fondo_Diferente.jpeg: pred=limon; real=naranja; repetida=False
+Prueba_Naranja_No_Luz.jpeg: pred=naranja; real=naranja; repetida=False
+Prueba_Naranja_Original.jpeg: pred=naranja; real=naranja; repetida=True
+Evaluación excluyendo fotos repetidas: 3/4 aciertos.
+El cambio de luz/fondo puede degradar un clasificador basado en color.

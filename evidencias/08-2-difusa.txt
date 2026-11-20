@@ -1,0 +1,7 @@
+OR(0.8,0.4)=0.8, AND=0.4, NOT(0.8)=0.2
+Comida= 6.5, servicio= 9.8 -> propina=19.85%
+Comida=   2, servicio=   3 -> propina=10.84%
+Comida=   5, servicio=   5 -> propina=12.67%
+Comida=   9, servicio=   9 -> propina=16.81%
+Comida=   2, servicio=   9 -> propina=13.06%
+El caso comida=2, servicio=9 activa propina baja y alta: el centroide equilibra ambas.

@@ -1,0 +1,21 @@
+Generación 0: fitness=-289.40; meta=False
+Generación 10: fitness=-217.90; meta=False
+Generación 20: fitness=-143.70; meta=False
+Generación 30: fitness=-98.30; meta=False
+Generación 40: fitness=-54.90; meta=False
+Generación 50: fitness=-31.70; meta=False
+Generación 60: fitness=-25.70; meta=False
+Generación 70: fitness=-24.70; meta=False
+Generación 80: fitness=-12.10; meta=False
+Generación 90: fitness=-12.10; meta=False
+Generación 100: fitness=-11.10; meta=False
+Generación 110: fitness=-10.10; meta=False
+Generación 120: fitness=-9.10; meta=False
+Generación 130: fitness=-8.10; meta=False
+Generación 140: fitness=-8.10; meta=False
+Generación 150: fitness=-8.10; meta=False
+Generación 160: fitness=-8.10; meta=False
+Generación 170: fitness=-8.10; meta=False
+Generación 172: fitness=8382.00; meta=True
+Meta alcanzada en generación 172; movimientos válidos=142; distancia óptima BFS=54.
+BFS solo calculó distancias de evaluación. La secuencia fue producida por selección, cruce y mutación.

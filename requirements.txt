@@ -1,0 +1,10 @@
+numpy
+matplotlib
+scipy
+scikit-learn
+scikit-fuzzy
+networkx
+ipython
+notebook
+nbclient
+pillow

@@ -1,0 +1,8 @@
+IPython         9.18.1
+notebook        7.6.5
+numpy           2.5.5
+matplotlib      3.11.2
+scipy           1.18.1
+sklearn         1.9.1
+Python: 3.14.10 | Ejecutable: C:\Users\elias\Downloads\Said - github\.venv-u1\Scripts\python.exe
+Prueba de regresión y=2x: para x=4 se obtuvo 8.00
