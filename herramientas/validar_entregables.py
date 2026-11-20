@@ -82,7 +82,7 @@ def main():
         assert hashlib.sha256((ROOT/documento["archivo"]).read_bytes()).hexdigest()==documento["sha256"]
     ok("Cinco archivos originales incorporados: tres PDF, una fuente LaTeX y una imagen del mapa mental.")
     readme=(ROOT/"README.md").read_text(encoding="utf-8")
-    assert len(re.findall(r"^## [a-l][.]",readme,re.MULTILINE))==12
+    assert re.findall(r"^## ([0-9]+)[.]",readme,re.MULTILINE)==[str(n) for n in range(1,13)]
     assert not any(linea.startswith("| ") for linea in readme.splitlines())
     assert "Cada práctica contiene su explicación" not in readme
     assert "El orden se obtuvo de los" not in readme
