@@ -66,21 +66,23 @@ Ejecución de dos agentes con un modelo local: un analista revisa las fuentes y 
 
 ![Salida de CrewAI con el modelo local](evidencias/07-crewai.png)
 
-## 8. Taller de red neuronal
+## 8. Talleres
+
+## 8.1. Taller de red neuronal
 
 Construcción y entrenamiento de una red neuronal con NumPy para clasificar dígitos de MNIST. La evaluación sobre 10 000 imágenes de prueba obtuvo 88.34 % de aciertos.
 
 [Código y cuaderno](08-talleres/01-red-neuronal/)
 
-### 8.1. Entrenamiento y evaluación
+### 8.1.1. Entrenamiento y evaluación
 
 ![Curvas de entrenamiento y evaluación de la red](08-talleres/01-red-neuronal/resultados/curvas.png)
 
-### 8.2. Predicciones de dígitos
+### 8.1.2. Predicciones de dígitos
 
 ![Predicciones de dígitos de MNIST](08-talleres/01-red-neuronal/resultados/predicciones.png)
 
-## 9. Taller de lógica difusa
+## 8.2. Taller de lógica difusa
 
 Aplicación de operaciones difusas y de un sistema de inferencia para calcular la propina según la calidad de la comida y del servicio.
 
@@ -88,7 +90,7 @@ Aplicación de operaciones difusas y de un sistema de inferencia para calcular l
 
 ![Resultado de la inferencia de propina](08-talleres/02-logica-difusa/resultados/inferencia.png)
 
-## 10. Taller de procesamiento de lenguaje natural
+## 8.3. Taller de procesamiento de lenguaje natural
 
 Análisis de sentimientos en frases en español mediante tokenización, un léxico de palabras y reglas sencillas de negación y contraste.
 
@@ -96,7 +98,7 @@ Análisis de sentimientos en frases en español mediante tokenización, un léxi
 
 ![Salida del análisis de sentimientos](evidencias/08-3-nlp.png)
 
-## 11. Taller de algoritmos evolutivos
+## 8.4. Taller de algoritmos evolutivos
 
 Resolución de un laberinto mediante un algoritmo genético con selección, cruce, mutación y elitismo. La población alcanzó la meta en la generación 172.
 
@@ -104,7 +106,7 @@ Resolución de un laberinto mediante un algoritmo genético con selección, cruc
 
 ![Recorrido del laberinto y evolución del fitness](08-talleres/04-algoritmos-evolutivos/resultados/laberinto.png)
 
-## 12. Taller de visión por computadora
+## 8.5. Taller de visión por computadora
 
 Clasificación de imágenes de limón, naranja y fondo mediante características de color y regresión logística. Se compararon imágenes con cambios de iluminación y fondo.
 
